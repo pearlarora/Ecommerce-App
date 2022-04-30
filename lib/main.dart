@@ -13,6 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: "Catalogue App",
         debugShowCheckedModeBanner: false,
+        themeMode: ThemeMode.light,
+        theme: ThemeData(primarySwatch: Colors.amber),
+        darkTheme: ThemeData(brightness: Brightness.dark),
         home: HomeScreen());
   }
 }
